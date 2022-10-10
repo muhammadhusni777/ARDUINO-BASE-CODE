@@ -1,0 +1,78 @@
+control :
+	speed1
+	speed2
+	speed3
+	speed4
+	
+	steering1
+	steering2
+	steering3
+	steering4
+		 
+sensor :
+	rpm1
+	rpm2
+	rpm3
+	rpm4
+	
+	temp1
+	temp2
+	temp3
+	temp4
+
+	compass/heading
+	battery
+	gps
+	
+	
+	azimuth1
+	azimuth2
+	azimuth3
+	azimuth4
+
+mqtt data to qtcreator :	
+	windSpeed_value.text = mqttvalue.windspeed()
+    wind_direct_value.text = mqttvalue.windirect()
+    latidude_position_value.text = mqttvalue.lat()
+    longitude_position_value.text = mqttvalue.long()     heading_value.text = mqttvalue.headingShip()     vessel.rotation = mqttvalue.headingShip()
+
+    speed1.text = mqttvalue.speedinput1()
+    speed2.text = mqttvalue.speedinput2()
+    speed3.text = mqttvalue.speedinput3()
+    speed4.text = mqttvalue.speedinput4()
+
+    gov1.active = mqttvalue.engineconect1()
+    gov2.active = mqttvalue.engineconect2()
+    gov3.active = mqttvalue.engineconect3()
+    gov4.active = mqttvalue.engineconect4()
+
+    dp1.text = mqttvalue.steering1()
+    dp2.text = mqttvalue.steering2()
+    dp3.text = mqttvalue.steering3()
+    dp4.text = mqttvalue.steering4()
+
+    arrowkiridepan.rotation = mqttvalue.steering1()
+    arrowkanandepan.rotation = mqttvalue.steering4()
+
+    arrowkananbelakang.rotation = mqttvalue.steering2()
+    arrowkiribelakang.rotation = mqttvalue.steering3()
+
+    volt1.text = mqttvalue.bat1()
+    volt2.text = mqttvalue.bat2()
+    volt3.text = mqttvalue.bat3()
+    volt4.text = mqttvalue.bat4()
+
+    rpm1.text = mqttvalue.mesin1()
+    rpm2.text = mqttvalue.mesin2()
+    rpm3.text = mqttvalue.mesin3()
+    rpm4.text = mqttvalue.mesin4()
+
+    suhu1.text = mqttvalue.temp1()
+    suhu2.text = mqttvalue.temp2()
+    suhu3.text = mqttvalue.temp3()
+    suhu4.text = mqttvalue.temp4()
+
+    connect1.active = mqttvalue.engineconect1()
+    connect2.active = mqttvalue.engineconect2()
+    connect3.active = mqttvalue.engineconect3()
+    connect4.active = mqttvalue.engineconect4()
